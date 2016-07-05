@@ -6,6 +6,15 @@
     font-size: 16px;
 }
 
+.postBody a, .postBody code{
+    word-wrap: break-word;
+}
+
+.postBody table{
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
 .container-fluid{
     padding-left: 0px;
     padding-right: 0px;
