@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>docs | adminMongo</title>
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="docs | adminMongo">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:site" content="http://adminmongo.com">
+    <meta name="twitter:creator" content="@mrvautin">
+    <meta property="fb:admins" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="docs | adminMongo">
+    <meta property="og:description" content="">
+    <link rel="canonical" href="http://adminmongo.com/docs/" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="/js/styles/adminmongo.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <span class="navbar-brand-name"><img height="25px" src="/img/logo.png"/></span>adminMongo
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li id="menu-home"><a href="/">Home</a></li>
+                    <li id="menu-docs"><a href="/docs">Docs</a></li>
+                    <li><a href="http://demo.adminmongo.com" target="_blank">Demo</a></li>
+                    <li><a href="https://github.com/mrvautin/adminMongo" target="_blank">Github</a></li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+        
+<div class="col-lg-12">
+    <div class="sidebar col-lg-2">
+        <ul class="list-group"></ul>
+    </div>
+    <div class="col-lg-8" role="main">
+        <div class="postBody">
+            <h1 id="Docs"><a href="#Docs" class="headerlink" title="Docs"></a>Docs</h1><p>adminMongo is a Web based user interface (GUI) to handle all your MongoDB connections/databases needs. adminMongo is fully responsive and should work on a range of devices.</p>
+<blockquote>
+<p>adminMongo connection information (including username/password) is stored unencrypted in a config file, it is not recommended to run this application on a production or public facing server without proper security considerations.</p>
+</blockquote>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="# Installation"></a><a name="Installation">#</a> Installation</h2><p><strong>Using NPM:</strong></p>
+<ol>
+<li>Install from NPM: <code>npm install admin-mongo</code></li>
+<li>Move folder from node_modules: <code>mv node_modules/admin-mongo/ ./adminMongo</code></li>
+<li>Enter folder: <code>cd adminMongo</code></li>
+<li>Install dependencies: <code>npm install</code></li>
+<li>Start application: <code>npm start</code></li>
+<li>Visit <a href="http://127.0.0.1:1234" target="_blank" rel="external">http://127.0.0.1:1234</a> in your browser</li>
+</ol>
+<p><strong>Using Git:</strong></p>
+<ol>
+<li>Clone Repository: <code>git clone https://github.com/mrvautin/adminMongo.git &amp;&amp; cd adminMongo</code></li>
+<li>Install dependencies: <code>npm install</code></li>
+<li>Start application: <code>npm start</code></li>
+<li>Visit <a href="http://127.0.0.1:1234" target="_blank" rel="external">http://127.0.0.1:1234</a> in your browser</li>
+</ol>
+<p><strong>Using Zip:</strong></p>
+<ol>
+<li>Download Zip file from: <a href="https://github.com/mrvautin/adminMongo/archive/master.zip" target="_blank" rel="external">https://github.com/mrvautin/adminMongo/archive/master.zip</a> </li>
+<li>Unzip to chosen directory</li>
+<li>Enter directory: <code>cd adminMongo</code></li>
+<li>Install dependencies: <code>npm install</code></li>
+<li>Start application: <code>npm start</code></li>
+<li>Visit <a href="http://127.0.0.1:1234" target="_blank" rel="external">http://127.0.0.1:1234</a> in your browser</li>
+</ol>
+<h2 id="Deploy-on-Heroku"><a href="#Deploy-on-Heroku" class="headerlink" title="# Deploy on Heroku"></a><a name="Deploy on Heroku">#</a> Deploy on Heroku</h2><p><a href="https://heroku.com/deploy" target="_blank" rel="external"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a></p>
+<h2 id="Features"><a href="#Features" class="headerlink" title="# Features"></a><a name="Features">#</a> Features</h2><ul>
+<li>Manage from a connection level for easy access to multiple databases</li>
+<li>Create/Delete databases</li>
+<li>Create/Delete/Edit collection</li>
+<li>Create/Delete/Edit documents</li>
+<li>Create/Delete indexes</li>
+<li>Query documents</li>
+<li>Collection statistics</li>
+<li>Export collections in JSON format</li>
+</ul>
+<h3 id="Current-limitations"><a href="#Current-limitations" class="headerlink" title="# Current limitations"></a><a name="Current limitations">#</a> Current limitations</h3><ul>
+<li>Documents need to have an “_id” value which is a string, integer, or MongoDB ObjectId. Documents using Composite ID indexing is currently not supported.</li>
+<li>Connection strings with multiple hosts for replica sets are currently not supported.</li>
+</ul>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="# Configuration"></a><a name="Configuration">#</a> Configuration</h2><p>adminMongo will listen on host: <code>localhost</code> and  port: <code>1234</code> by default. This can be overwritten by adding a config file in <code>/config/app.json</code>. For example:</p>
+<pre><code>{
+    &quot;app&quot;: {
+        &quot;host&quot;: &quot;10.0.0.1&quot;,
+        &quot;port&quot;: 4321,
+        &quot;docs_per_page&quot;: 15,
+        &quot;password&quot;: &quot;secureadminpassword&quot;,
+        &quot;locale&quot;: &quot;de&quot;,
+        &quot;context&quot;: &quot;dbApp&quot;,
+        &quot;monitoring&quot;: false
+    }
+}
+</code></pre><blockquote>
+<p>Note: Any changes to the config file requires a restart of the application</p>
+</blockquote>
+<p>The config file (optional) options are:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>host</code></td>
+<td>The IP address  <code>adminMongo</code>  will listen on</td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td>The Port <code>adminMongo</code> will listen on</td>
+</tr>
+<tr>
+<td><code>docs_per_page</code></td>
+<td>When viewing docs you can specify how many are shown per page</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>An application level password to add simply authentication</td>
+</tr>
+<tr>
+<td><code>locale</code></td>
+<td>The locale is automatically set to the detected locale of Nodejs. If there is not a translation, <code>adminMongo</code> will default to English. This setting overrides the default/detected value</td>
+</tr>
+<tr>
+<td><code>context</code></td>
+<td>Setting a <code>context</code> of “dbApp” is like changing the base URL of the app and will mean the app will listen on <code>http://10.0.0.1:4321/dbApp</code>. Ommiting a context will mean the application will listen on root. Eg: <code>http://10.0.0.1:4321</code>. This setting can be useful when running <code>adminMongo</code> behind Nginx etc.</td>
+</tr>
+<tr>
+<td><code>monitoring</code></td>
+<td>Whether to run monitoring at regular intervals. Defaults to true or on</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Setting-a-context-path"><a href="#Setting-a-context-path" class="headerlink" title="# Setting a context path"></a><a name="Setting a context path">#</a> Setting a context path</h3><p>Setting a <code>context</code> of “dbApp” is like changing the base URL of the app and will mean the app will listen on <code>http://10.0.0.1:4321/dbApp</code>. Ommiting a context will mean the application will listen on<br>root. Eg: <code>http://10.0.0.1:4321</code>. This setting can be useful when running <code>adminMongo</code> behind Nginx etc.</p>
+<p>An example Nginx server block. Note the <code>location /dbApp {</code> and <code>proxy_pass http://10.0.0.1:4321/dbApp;</code> lines match<br>the <code>context</code> set in the <code>/config/app.json</code> file.</p>
+<pre><code>server {
+    listen 80;
+
+    server_name mydomain.com www.mydomain.com;
+
+    location /dbApp {
+        proxy_pass http://10.0.0.1:4321/dbApp;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection &#39;upgrade&#39;;
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+</code></pre><h3 id="Language-locale"><a href="#Language-locale" class="headerlink" title="# Language locale"></a><a name="Language locale">#</a> Language locale</h3><blockquote>
+<p>Looking for people to translate into other languages. If you can help, grab the <code>/locale/en.js</code> file, translate to your language and submit a pull request.</p>
+</blockquote>
+<p>The locale is automatically set to the detected locale of Nodejs. If there is not a translation, <code>adminMongo</code> will default to English. To override the detected locale<br>a setting can be added to the <code>app.json</code> file. See Configuration section for a “German” example.</p>
+<h3 id="Authentication"><a href="#Authentication" class="headerlink" title="# Authentication"></a><a name="Authentication">#</a> Authentication</h3><p>By default <code>adminMongo</code> is not password protected. You can add password authentication by adding a <code>password</code> value to the <code>/config/app.json</code> file<br>(See the Configuration section). Once added you will need to restart <code>adminMongo</code> and all routes will be protected until the correct password is added. You<br>will then be authenticated for the life of the session (60 mins by default) or if the “Logout” link is clicked.</p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="# Usage"></a><a name="Usage">#</a> Usage</h2><h3 id="Create-a-connection"><a href="#Create-a-connection" class="headerlink" title="# Create a connection"></a><a name="Create a connection">#</a> Create a connection</h3><p>After visiting <a href="http://127.0.0.1:1234" target="_blank" rel="external">http://127.0.0.1:1234</a> you will be presented with a connection screen. You need to give your connection a unique name as a reference when using adminMongo and a MongoDB formatted connection string. The format of a MongoDB connection string can form: <code>mongodb://&lt;user&gt;:&lt;password&gt;@127.0.0.1:&lt;port&gt;/&lt;db&gt;</code> where specifying to the <code>&lt;db&gt;</code> level is optional. For more information on MongoDB connection strings, see the <a href="http://docs.mongodb.org/manual/reference/connection-string/" target="_blank" rel="external">official MongoDB documentation</a>.</p>
+<p>You can supply a connection options object (see <a href="http://mongodb.github.io/node-mongodb-native/2.1/reference/connecting/connection-settings/" target="_blank" rel="external">docs</a>) with each connection. </p>
+<p>For example:</p>
+<pre><code>{
+    &quot;poolSize&quot;: 10,
+    &quot;autoReconnect&quot;: false,
+    &quot;ssl&quot;: false
+}
+</code></pre><p>Note: The connection can be either local or remote hosted on VPS or MongoDB service such as mLab.</p>
+<p><em>The Connection setup screen</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_connections.png" alt="adminMongo connections screen" title="adminMongo connections screen"></p>
+<h3 id="Connection-Database-admin"><a href="#Connection-Database-admin" class="headerlink" title="# Connection/Database admin"></a><a name="Connection/Database admin">#</a> Connection/Database admin</h3><p>After opening your newly created connection, you are able to see all database objects associated with your connection. Here you can create/delete collections, create/delete users and see various stats for your database.</p>
+<p><em>The connections/database screen</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_dbview.png" alt="adminMongo database screen" title="adminMongo database screen"></p>
+<h3 id="Collections"><a href="#Collections" class="headerlink" title="# Collections"></a><a name="Collections">#</a> Collections</h3><p>After selecting your collection from the “Database Objects” menu, you will be presented with the collections screen. Here you can see documents in pagination form, create new documents, search documents, delete, edit documents and view/add indexes to your collection.</p>
+<p><em>The collections screen</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_collectionview.png" alt="adminMongo collections screen" title="adminMongo collections screen"></p>
+<h3 id="Searching-Querying-documents"><a href="#Searching-Querying-documents" class="headerlink" title="# Searching/Querying documents"></a><a name="Searching/Querying documents">#</a> Searching/Querying documents</h3><p>You can perform searches of documents using the <code>Search documents</code> button on the collections screen. You will need to enter the key (field name) and value. Eg: key = “_id” and value = “569ff81e0077663d78a114ce” (Only works on string “_id” fields - Use “Query Documents” for ObjectID’s).</p>
+<blockquote>
+<p>You can clear your search by clicking the <code>Reset</code> button on the collections screen.</p>
+</blockquote>
+<p><em>Simple search documents</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_searchdocuments.png" alt="adminMongo search documents" title="adminMongo search documents"></p>
+<p>Complex querying of documents is done through the “Query documents” button. This allows a query Object to be passed to MongoDB to return results.<br>Queries can be written in full BSON format or EJSON format. For example these queries should return the same results: </p>
+<pre><code>{ 
+    ObjectId(&quot;56a97ed3f718fe9a4f599489&quot;)
+}
+</code></pre><p>is equivalent to: </p>
+<pre><code>{
+    &quot;$oid&quot;: &quot;56a97ed3f718fe9a4f599489&quot;
+}
+</code></pre><p><em>Query documents</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_querydocuments.png" alt="adminMongo search documents" title="adminMongo search documents"></p>
+<h3 id="Documents"><a href="#Documents" class="headerlink" title="# Documents"></a><a name="Documents">#</a> Documents</h3><p>Adding and editing documents is done using a JSON syntax highlighting control.</p>
+<p><em>Editing a document</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_docedit.png" alt="adminMongo documents" title="adminMongo documents"></p>
+<p>Documents with Media embedded show previews</p>
+<p><em>Documents with media</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_media.png" alt="adminMongo media" title="adminMongo media documents"></p>
+<h3 id="Server-Monitoring"><a href="#Server-Monitoring" class="headerlink" title="# Server Monitoring"></a><a name="Server Monitoring">#</a> Server Monitoring</h3><p><em>Functionality currently in Beta</em></p>
+<p>Selected server monitoring is done at regular intervals and stored in local database store for 24hrs. </p>
+<p><em>New connections require an app restart for monitoring to commence</em></p>
+<p><em>Server monitoring</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_servermonitoring.png" alt="adminMongo server monitoring" title="adminMongo server monitoring"></p>
+<h3 id="Indexes"><a href="#Indexes" class="headerlink" title="# Indexes"></a><a name="Indexes">#</a> Indexes</h3><p>Indexes can be added from the collection screen. Please see the <a href="https://docs.mongodb.org/manual/indexes/" target="_blank" rel="external">official MongoDB documentation</a> on adding indexes.</p>
+<p><em>Viewing/Adding indexes</em><br><img src="https://raw.githubusercontent.com/mrvautin/mrvautin.github.io/master/images/adminMongo/adminMongo_manageindexes.png" alt="adminMongo documents" title="adminMongo indexes"></p>
+<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="# Contributing"></a><a name="Contributing">#</a> Contributing</h2><ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
+<li>Commit your changes: <code>git commit -am &#39;Add some feature&#39;</code></li>
+<li>Push to the branch: <code>git push origin my-new-feature</code></li>
+<li>Submit a pull request :D</li>
+</ol>
+
+            <a href="#top" id="top-link">^ Top of Page</a>
+        </div>
+    </div>
+</div>
+<div class="footer col-lg-12">
+    <div class="text-center">
+        <section class="copyright">All content copyright <a href="//">adminMongo</a> &copy; 2016 - All rights reserved.</section>
+    </div>
+</div>
+
+    </div>
+    <script type="text/javascript" src="/js/topLink.js"></script>
+    <script type="text/javascript" src="/js/marker.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+    
+</body>
+</html>

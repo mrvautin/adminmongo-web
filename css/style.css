@@ -1,0 +1,130 @@
+.postBody p{
+    line-height: 1.9em;  
+}
+
+.postBody{
+    font-size: 16px;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.page-header{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.navbar-inverse {
+    background-color: #ecf0f1;
+    border-color: transparent;
+}
+
+.highlight .code pre {
+    padding: 1.2em 1.4em;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+#top-link{ 
+    display:none; 
+    position:fixed; 
+    right:25px; 
+    bottom:25px;
+    font-weight:bold; 
+    text-decoration:none; 
+    padding:10px; 
+}
+
+.postBody{
+    padding-top: 10px;
+}
+
+.sidebar{
+    padding-top: 90px;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-brand img{
+    padding-top: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #15a589;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #15a589;
+}
+
+.navbar-brand-name > {
+  display: inline-block;
+}
+
+.navbar-brand-name > img {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+
+.installer{
+    background: #2c3e50;
+    font-family: Source Code Pro,Monaco,Menlo,Consolas,monospace;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+h1.jumbo-header{
+    font-size: 40px;
+}
+
+
+.highlight {
+    overflow-x: auto;
+    position: relative;
+    padding: 0;
+    background-color: #f8f8f8;
+    padding: 0.8em 0.8em 0.4em;
+    line-height: 1.1em;
+    border-radius: 2px;
+}
+
+.highlight.html .code:after, .highlight.js .code:after, .highlight.bash .code:after, .highlight.css .code:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ccc;
+    text-align: right;
+    font-size: 0.75em;
+    padding: 5px 10px 0;
+    line-height: 15px;
+    height: 15px;
+    font-weight: 600;
+}
+
+pre {
+    border: none;
+}
+
+code {
+    color: #cd2a19;
+}
+
+.postBody ul li, .postBody ol li{
+    padding-bottom: 10px;
+}
+
+.marker { 
+    color: #15a589;
+    background-color: transparent; 
+}
